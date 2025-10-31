@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900;
+    @apply text-white font-sans antialiased;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .timer-ring {
+    @apply transition-all duration-1000 ease-linear;
+  }
+}
